@@ -43,7 +43,7 @@
             label11 = new Label();
             label10 = new Label();
             label9 = new Label();
-            tb_chocolat_quantity = new TextBox();
+            tb_chocolate_quantity = new TextBox();
             tb_latte_quantity = new TextBox();
             tb_mocha_quantity = new TextBox();
             tb_black_coffee_quantity = new TextBox();
@@ -60,7 +60,7 @@
             label7 = new Label();
             tb_crash = new TextBox();
             label6 = new Label();
-            tb_chocolat_price = new TextBox();
+            tb_chocolate_price = new TextBox();
             tb_latte_price = new TextBox();
             tb_black_coffee_price = new TextBox();
             tb_mocha_price = new TextBox();
@@ -74,7 +74,7 @@
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
-            tb_chocolat_mix = new TextBox();
+            tb_chocolate_mix = new TextBox();
             tb_milk_mix = new TextBox();
             tb_water_mix = new TextBox();
             tb_coffee_mix = new TextBox();
@@ -224,13 +224,13 @@
             label9.TabIndex = 73;
             label9.Text = "Quantity";
             // 
-            // tb_chocolat_quantity
+            // tb_chocolate_quantity
             // 
-            tb_chocolat_quantity.Location = new Point(412, 191);
-            tb_chocolat_quantity.Margin = new Padding(3, 2, 3, 2);
-            tb_chocolat_quantity.Name = "tb_chocolat_quantity";
-            tb_chocolat_quantity.Size = new Size(67, 23);
-            tb_chocolat_quantity.TabIndex = 72;
+            tb_chocolate_quantity.Location = new Point(412, 191);
+            tb_chocolate_quantity.Margin = new Padding(3, 2, 3, 2);
+            tb_chocolate_quantity.Name = "tb_chocolate_quantity";
+            tb_chocolate_quantity.Size = new Size(67, 23);
+            tb_chocolate_quantity.TabIndex = 72;
             // 
             // tb_latte_quantity
             // 
@@ -379,13 +379,13 @@
             label6.TabIndex = 56;
             label6.Text = "Crash";
             // 
-            // tb_chocolat_price
+            // tb_chocolate_price
             // 
-            tb_chocolat_price.Location = new Point(412, 166);
-            tb_chocolat_price.Margin = new Padding(3, 2, 3, 2);
-            tb_chocolat_price.Name = "tb_chocolat_price";
-            tb_chocolat_price.Size = new Size(67, 23);
-            tb_chocolat_price.TabIndex = 55;
+            tb_chocolate_price.Location = new Point(412, 166);
+            tb_chocolate_price.Margin = new Padding(3, 2, 3, 2);
+            tb_chocolate_price.Name = "tb_chocolate_price";
+            tb_chocolate_price.Size = new Size(67, 23);
+            tb_chocolate_price.TabIndex = 55;
             // 
             // tb_latte_price
             // 
@@ -475,7 +475,7 @@
             groupBox1.Controls.Add(tb_mocha_price);
             groupBox1.Controls.Add(tb_black_coffee_price);
             groupBox1.Controls.Add(tb_latte_price);
-            groupBox1.Controls.Add(tb_chocolat_price);
+            groupBox1.Controls.Add(tb_chocolate_price);
             groupBox1.Controls.Add(pictureBox8);
             groupBox1.Controls.Add(label12);
             groupBox1.Controls.Add(label11);
@@ -484,7 +484,7 @@
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(tb_chocolat_quantity);
+            groupBox1.Controls.Add(tb_chocolate_quantity);
             groupBox1.Controls.Add(tb_black_coffee_quantity);
             groupBox1.Controls.Add(tb_latte_quantity);
             groupBox1.Controls.Add(tb_mocha_quantity);
@@ -544,13 +544,13 @@
             pictureBox4.TabIndex = 92;
             pictureBox4.TabStop = false;
             // 
-            // tb_chocolat_mix
+            // tb_chocolate_mix
             // 
-            tb_chocolat_mix.Location = new Point(267, 240);
-            tb_chocolat_mix.Margin = new Padding(3, 2, 3, 2);
-            tb_chocolat_mix.Name = "tb_chocolat_mix";
-            tb_chocolat_mix.Size = new Size(110, 23);
-            tb_chocolat_mix.TabIndex = 97;
+            tb_chocolate_mix.Location = new Point(267, 240);
+            tb_chocolate_mix.Margin = new Padding(3, 2, 3, 2);
+            tb_chocolate_mix.Name = "tb_chocolate_mix";
+            tb_chocolate_mix.Size = new Size(110, 23);
+            tb_chocolate_mix.TabIndex = 97;
             // 
             // tb_milk_mix
             // 
@@ -585,7 +585,7 @@
             groupBox2.Controls.Add(pictureBox3);
             groupBox2.Controls.Add(tb_milk_mix);
             groupBox2.Controls.Add(pictureBox4);
-            groupBox2.Controls.Add(tb_chocolat_mix);
+            groupBox2.Controls.Add(tb_chocolate_mix);
             groupBox2.Location = new Point(820, 28);
             groupBox2.Margin = new Padding(3, 2, 3, 2);
             groupBox2.Name = "groupBox2";
@@ -667,7 +667,7 @@
         private Label label11;
         private Label label10;
         private Label label9;
-        private TextBox tb_chocolat_quantity;
+        private TextBox tb_chocolate_quantity;
         private TextBox tb_latte_quantity;
         private TextBox tb_mocha_quantity;
         private TextBox tb_black_coffee_quantity;
@@ -684,7 +684,7 @@
         private Label label7;
         private TextBox tb_crash;
         private Label label6;
-        private TextBox tb_chocolat_price;
+        private TextBox tb_chocolate_price;
         private TextBox tb_latte_price;
         private TextBox tb_black_coffee_price;
         private TextBox tb_mocha_price;
@@ -698,7 +698,7 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
-        private TextBox tb_chocolat_mix;
+        private TextBox tb_chocolate_mix;
         private TextBox tb_milk_mix;
         private TextBox tb_water_mix;
         private TextBox tb_coffee_mix;

@@ -11,12 +11,24 @@ namespace veding_machine
         MenuItem water = new MenuItem();
         MenuItem coffee = new MenuItem();
         MenuItem milk = new MenuItem();
-        MenuItem chocolatMix = new MenuItem();
+        MenuItem chocolateMix = new MenuItem();
 
         public Form1()
         {
             InitializeComponent();
             showStock(this, EventArgs.Empty);
+
+            tb_black_coffee_price.Text = blackCoffee.Price.ToString();
+            tb_black_coffee_quantity.Text = blackCoffee.Quantity.ToString();
+
+            tb_latte_price.Text = latte.Price.ToString();
+            tb_latte_quantity.Text = latte.Quantity.ToString();
+
+            tb_mocha_price.Text = mocca.Price.ToString();
+            tb_mocha_quantity.Text = mocca.Quantity.ToString();
+
+            tb_chocolate_price.Text = chocolate.Price.ToString();
+            tb_chocolate_quantity.Text = chocolate.Quantity.ToString();
 
             blackCoffee.Name = "Black Coffee";
             blackCoffee.Price = 50;
@@ -47,17 +59,6 @@ namespace veding_machine
         }
         public void showStock(object sender, EventArgs e)
         {
-            tb_black_coffee_price.Text = blackCoffee.Price.ToString();
-            tb_black_coffee_quantity.Text = blackCoffee.Quantity.ToString();
-
-            tb_latte_price.Text = latte.Price.ToString();
-            tb_latte_quantity.Text = latte.Quantity.ToString();
-
-            tb_mocha_price.Text = mocca.Price.ToString();
-            tb_mocha_quantity.Text = mocca.Quantity.ToString();
-
-            tb_chocolat_price.Text = chocolate.Price.ToString();
-            tb_chocolat_quantity.Text = chocolate.Quantity.ToString();
 
             water.Name = "Water Mix";
             water.Quantity = 1000;
@@ -68,13 +69,13 @@ namespace veding_machine
             milk.Name = "Milk Mix";
             milk.Quantity = 1000;
 
-            chocolatMix.Name = "Chocolate Mix";
-            chocolatMix.Quantity = 1000;
+            chocolateMix.Name = "Chocolate Mix";
+            chocolateMix.Quantity = 1000;
 
             tb_water_mix.Text = water.Quantity.ToString();
             tb_coffee_mix.Text = coffee.Quantity.ToString();
             tb_milk_mix.Text = milk.Quantity.ToString();
-            tb_chocolat_mix.Text = chocolatMix.Quantity.ToString();
+            tb_chocolate_mix.Text = chocolateMix.Quantity.ToString();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -124,17 +125,17 @@ namespace veding_machine
 
                     tb_water_mix.Text = availableIngredients["Water"].Quantity.ToString();
                     tb_coffee_mix.Text = availableIngredients["Coffee"].Quantity.ToString();
-                    tb_chocolat_mix.Text = availableIngredients["Chocolate"].Quantity.ToString();
+                    tb_chocolate_mix.Text = availableIngredients["Chocolate"].Quantity.ToString();
                 }
 
                 if (chb_chocolat.Checked)
                 {
-                    chocolate.Quantity = int.Parse(tb_chocolat_quantity.Text);
+                    chocolate.Quantity = int.Parse(tb_chocolate_quantity.Text);
                     dTotal += chocolate.GetTotalPrice();
                     chocolate.UseIngredients(availableIngredients);
 
                     tb_water_mix.Text = availableIngredients["Water"].Quantity.ToString();
-                    tb_chocolat_mix.Text = availableIngredients["Chocolate"].Quantity.ToString();
+                    tb_chocolate_mix.Text = availableIngredients["Chocolate"].Quantity.ToString();
                 }
 
                 if (dCash < dTotal)
@@ -188,7 +189,7 @@ namespace veding_machine
             tb_water_mix.Text = water.Quantity.ToString();
             tb_coffee_mix.Text = coffee.Quantity.ToString();
             tb_milk_mix.Text = milk.Quantity.ToString();
-            tb_chocolat_mix.Text = chocolatMix.Quantity.ToString();
+            tb_chocolate_mix.Text = chocolateMix.Quantity.ToString();
 
             water.Name = "Water Mix";
             water.Quantity = 1000;
@@ -199,8 +200,8 @@ namespace veding_machine
             milk.Name = "Milk Mix";
             milk.Quantity = 1000;
 
-            chocolatMix.Name = "Chocolate Mix";
-            chocolatMix.Quantity = 1000;
+            chocolateMix.Name = "Chocolate Mix";
+            chocolateMix.Quantity = 1000;
         }
     }
 }
