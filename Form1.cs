@@ -16,6 +16,7 @@ namespace veding_machine
         public Form1()
         {
             InitializeComponent();
+            showStock(this, EventArgs.Empty);
 
             blackCoffee.Name = "Black Coffee";
             blackCoffee.Price = 50;
@@ -43,7 +44,9 @@ namespace veding_machine
             chocolate.Ingredients.Add("Water", 300);
             chocolate.Ingredients.Add("Chocolate", 20);
 
-            // ???????????? UI
+        }
+        public void showStock(object sender, EventArgs e)
+        {
             tb_black_coffee_price.Text = blackCoffee.Price.ToString();
             tb_black_coffee_quantity.Text = blackCoffee.Quantity.ToString();
 
@@ -73,14 +76,10 @@ namespace veding_machine
             tb_milk_mix.Text = milk.Quantity.ToString();
             tb_chocolat_mix.Text = chocolatMix.Quantity.ToString();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -102,12 +101,10 @@ namespace veding_machine
                     dTotal += blackCoffee.GetTotalPrice();
                     blackCoffee.UseIngredients(availableIngredients);
 
-                    // ?????? UI ?????????????????????
                     tb_water_mix.Text = availableIngredients["Water"].Quantity.ToString();
                     tb_coffee_mix.Text = availableIngredients["Coffee"].Quantity.ToString();
                 }
 
-                // ?????????????????????????????????
                 if (chb_latte.Checked)
                 {
                     latte.Quantity = int.Parse(tb_latte_quantity.Text);
@@ -176,7 +173,6 @@ namespace veding_machine
             tb_05.Text = changeCount[3].ToString();
             tb_025.Text = changeCount[4].ToString();
         }
-
         private void pictureBox5_Click(object sender, EventArgs e)
         {
 
@@ -185,6 +181,26 @@ namespace veding_machine
         private void chb_mocha_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void increaseStock_Click(object sender, EventArgs e)
+        {
+            tb_water_mix.Text = water.Quantity.ToString();
+            tb_coffee_mix.Text = coffee.Quantity.ToString();
+            tb_milk_mix.Text = milk.Quantity.ToString();
+            tb_chocolat_mix.Text = chocolatMix.Quantity.ToString();
+
+            water.Name = "Water Mix";
+            water.Quantity = 1000;
+
+            coffee.Name = "Coffee Mix";
+            coffee.Quantity = 1000;
+
+            milk.Name = "Milk Mix";
+            milk.Quantity = 1000;
+
+            chocolatMix.Name = "Chocolate Mix";
+            chocolatMix.Quantity = 1000;
         }
     }
 }

@@ -79,6 +79,7 @@
             tb_water_mix = new TextBox();
             tb_coffee_mix = new TextBox();
             groupBox2 = new GroupBox();
+            increaseStock = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -594,11 +595,22 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Quantity";
             // 
+            // increaseStock
+            // 
+            increaseStock.Location = new Point(820, 353);
+            increaseStock.Name = "increaseStock";
+            increaseStock.Size = new Size(102, 82);
+            increaseStock.TabIndex = 102;
+            increaseStock.Text = "Restock";
+            increaseStock.UseVisualStyleBackColor = true;
+            increaseStock.Click += increaseStock_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1259, 477);
+            Controls.Add(increaseStock);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(label18);
@@ -691,5 +703,6 @@
         private TextBox tb_water_mix;
         private TextBox tb_coffee_mix;
         private GroupBox groupBox2;
+        private Button increaseStock;
     }
 }
